@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<!--<StackPane style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.ManagerViewController">
+   <children>
+      <AnchorPane id="employeeView" fx:id="employeeView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" StackPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0" />
+            <Button id="logOutButton" fx:id="logOutButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Logout      " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Manager View" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <SplitPane dividerPositions="0.29797979797979796" layoutX="188.0" layoutY="174.0" prefHeight="339.0" prefWidth="666.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="roomButton" layoutX="-5.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Hotel Rooms" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="reservationsButton" layoutX="-5.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Reservations" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="-5.0" layoutY="227.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #7689a9;" text="Manager" textFill="WHITE" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="158.0">
+                     <children>
+                        <ListView layoutY="-1.0" prefHeight="337.0" prefWidth="463.0" />
+                        <Button fx:id="roomPriceButton" layoutX="26.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #152d54;" text="Rooms Price" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="employeeButton" layoutX="180.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #152d54;" text="Employees" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="amenityButton" layoutX="325.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #152d54;" text="Amenities" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="18.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="18.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="18.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/dollarsign.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="172.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/employee.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="317.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/service.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane> 
+-->
+
+<AnchorPane id="employeeView" fx:id="employeeView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.ManagerViewController">
+   <children>
+      <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0" />
+      <Button id="logOutButton" fx:id="logOutButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Logout      " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Manager View" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="188.0" layoutY="174.0" prefHeight="339.0" prefWidth="666.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="roomButton" layoutX="-5.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Hotel Rooms" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="reservationsButton" layoutX="-5.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Reservations" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button layoutX="-5.0" layoutY="227.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #7689a9;" text="Manager" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="158.0">
+               <children>
+                  <ListView layoutY="-1.0" prefHeight="337.0" prefWidth="463.0" />
+                  <Button fx:id="roomPriceButton" layoutX="26.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #152d54;" text="Rooms Price" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Button fx:id="employeeButton" layoutX="180.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #152d54;" text="Employees" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Button fx:id="amenityButton" layoutX="325.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #152d54;" text="Amenities" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="18.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="18.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="18.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/dollarsign.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="172.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/employee.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="317.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/service.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="349.0" layoutY="548.0" prefHeight="39.0" prefWidth="110.0" text="Total Income:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="484.0" layoutY="550.0" prefHeight="35.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
+

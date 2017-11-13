@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--<StackPane style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.ManagerViewAmenityController">
+   <children>
+      <AnchorPane id="employeeView" fx:id="employeeView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" StackPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0" />
+            <Button id="logOutButton" fx:id="logOutButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Logout      " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Amenity" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <SplitPane dividerPositions="0.29797979797979796" layoutX="188.0" layoutY="174.0" prefHeight="339.0" prefWidth="666.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="325.0" prefWidth="195.0">
+                     <children>
+                        <Button fx:id="roomButton" layoutX="-5.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Hotel Rooms" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="reservationsButton" layoutX="-5.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Reservations" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="managerButton" layoutX="-5.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #7689a9;" text="Manager" textFill="WHITE" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="158.0">
+                     <children>
+                        <ListView layoutX="1.0" prefHeight="337.0" prefWidth="463.0" />
+                        <Button fx:id="roomPriceButton" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Rooms Price" textFill="WHITE" />
+                        <Button fx:id="employeeButton" layoutX="194.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Employees" textFill="WHITE" />
+                        <Button fx:id="amenityButton" layoutX="354.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #7689a9;" text="Amenities" textFill="WHITE" />
+                        <TableView layoutX="30.0" layoutY="45.0" prefHeight="119.0" prefWidth="398.0">
+                          <columns>
+                            <TableColumn prefWidth="115.0" text="Amenity" />
+                            <TableColumn minWidth="0.0" prefWidth="151.0" text="Description" />
+                              <TableColumn minWidth="0.0" prefWidth="131.0" text="Price" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="addButton" layoutX="71.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Add" />
+                        <Button fx:id="deleteButton" layoutX="207.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Delete" />
+                        <Button fx:id="updateButton" layoutX="363.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Update" />
+                        <TextField fx:id="amenityName" layoutX="147.0" layoutY="180.0" prefHeight="25.0" prefWidth="275.0" />
+                        <TextField fx:id="amenityPrice" layoutX="148.0" layoutY="213.0" prefHeight="25.0" prefWidth="275.0" />
+                        <TextArea fx:id="amenityDescription" layoutX="145.0" layoutY="246.0" prefHeight="39.0" prefWidth="283.0" />
+                        <Text layoutX="30.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amenity" />
+                        <Text layoutX="30.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+                        <Text layoutX="32.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>-->
+
+<AnchorPane id="employeeView" fx:id="employeeView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.ManagerViewAmenityController">
+   <children>
+      <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0" />
+      <Button id="logOutButton" fx:id="logOutButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Logout      " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Amenity" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="188.0" layoutY="174.0" prefHeight="339.0" prefWidth="666.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="325.0" prefWidth="195.0">
+               <children>
+                  <Button fx:id="roomButton" layoutX="-5.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Hotel Rooms" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="reservationsButton" layoutX="-5.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Reservations" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="managerButton" layoutX="-5.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #7689a9;" text="Manager" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="158.0">
+               <children>
+                  <ListView layoutX="1.0" prefHeight="337.0" prefWidth="463.0" />
+                  <Button fx:id="roomPriceButton" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Rooms Price" textFill="WHITE" />
+                  <Button fx:id="employeeButton" layoutX="194.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Employees" textFill="WHITE" />
+                  <Button fx:id="amenityButton" layoutX="354.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #7689a9;" text="Amenities" textFill="WHITE" />
+                  <TableView fx:id="amenityTable" layoutX="30.0" layoutY="45.0" prefHeight="119.0" prefWidth="398.0">
+                    <columns>
+                      <TableColumn fx:id="idColumn" prefWidth="45.0" text="ID" />
+                      <TableColumn fx:id="amenityNameColumn" minWidth="0.0" onEditCommit="#changeAmenityNameEvent" prefWidth="103.0" text="Amenity" />
+                        <TableColumn fx:id="priceColumn" minWidth="0.0" onEditCommit="#changeAmenityPriceEvent" prefWidth="77.0" text="Price" />
+                        <TableColumn fx:id="descriptionColumn" minWidth="0.0" onEditCommit="#changeAmenityDescriptionEvent" prefWidth="170.0" text="Description" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="addButton" layoutX="71.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Add" />
+                  <Button fx:id="deleteButton" layoutX="207.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Delete" />
+                  <Button fx:id="updateButton" layoutX="363.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Update" />
+                  <TextField fx:id="amenityName" layoutX="147.0" layoutY="180.0" prefHeight="25.0" prefWidth="275.0" />
+                  <TextField fx:id="amenityPrice" layoutX="148.0" layoutY="213.0" prefHeight="25.0" prefWidth="275.0" />
+                  <TextArea fx:id="amenityDescription" layoutX="145.0" layoutY="246.0" prefHeight="39.0" prefWidth="283.0" />
+                  <Text layoutX="30.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amenity" />
+                  <Text layoutX="30.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+                  <Text layoutX="32.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <TextArea layoutX="484.0" layoutY="550.0" prefHeight="35.0" prefWidth="200.0" />
+      <Label layoutX="349.0" layoutY="548.0" prefHeight="39.0" prefWidth="110.0" text="Total Income:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

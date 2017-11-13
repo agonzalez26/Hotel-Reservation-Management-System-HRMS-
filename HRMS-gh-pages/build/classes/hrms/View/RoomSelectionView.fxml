@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.RoomSelectionViewController">
+  <children>
+    <AnchorPane fx:id="roomSelectionView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" StackPane.alignment="CENTER">
+      <children>
+        <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+        <Button fx:id="logInButton" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="       Login        " textFill="WHITE">
+          <font>
+            <Font size="18.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Button fx:id="backButton" font="$x1" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Back      " textFill="WHITE" />
+        <Button fx:id="nextButton" font="$x1" layoutX="904.0" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Next      " textFill="WHITE" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="444.0" layoutX="169.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0">
+          <fill>
+            <Color blue="0.580" green="0.478" red="0.373" fx:id="x2" />
+          </fill>
+        </Rectangle>
+        <Button fx:id="cancelButton" font="$x1" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Cancel      " textFill="WHITE" />
+        <TextField fx:id="billAmountText" editable="false" layoutX="513.0" layoutY="568.0" prefHeight="25.0" prefWidth="163.0" />
+        <Label font="$x1" layoutX="390.0" layoutY="565.0" prefHeight="29.0" prefWidth="110.0" text="Bill Amount:" textFill="WHITE" />
+        <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Select Your Room Locations" textFill="WHITE">
+          <font>
+            <Font size="24.0" fx:id="x4" />
+          </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="444.0" layoutX="9.0" layoutY="89.0" stroke="WHITE" strokeType="INSIDE" width="133.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="444.0" layoutX="890.0" layoutY="90.0" stroke="WHITE" strokeType="INSIDE" width="133.0" />
+        <Label font="$x1" layoutX="30.0" layoutY="101.0" text="Room Type" textFill="WHITE" underline="true" />
+        <Label font="$x1" layoutX="906.0" layoutY="101.0" text="Room Status" textFill="WHITE" underline="true" />
+        <TabPane id="roomSelection" layoutX="236.0" layoutY="161.0" prefHeight="337.0" prefWidth="565.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+            <Tab id="floor1tab" fx:id="floor1tab" closable="false" text="Floor 1">
+              <content>
+                <AnchorPane fx:id="floor1plan" minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="582.0" style="-fx-background-color: #808080;">
+                  <children>
+                    <Button id="room119" layoutX="-7.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="19">
+                      <font>
+                        <Font size="10.0" fx:id="x3" />
+                      </font>
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room120" font="$x3" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="98.0" style="-fx-background-color: #90EE90;" text="20">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="62.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room116" font="$x3" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="102.0" style="-fx-background-color: #90EE90;" text="16">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="69.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room111" font="$x3" layoutX="464.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="102.0" style="-fx-background-color: #90EE90;" text="11">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="69.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room107" font="$x3" layoutX="471.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleRoomAction" prefWidth="97.0" style="-fx-background-color: #90EE90;" text="7" textAlignment="RIGHT">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="73.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room101" font="$x3" layoutX="100.0" layoutY="-1.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="51.0" style="-fx-background-color: #90EE90;" text="1" textAlignment="JUSTIFY">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="46.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room118" font="$x3" layoutX="-11.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="18">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room117" font="$x3" layoutX="-10.0" layoutY="184.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="17">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room102" font="$x3" layoutX="164.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="51.0" style="-fx-background-color: #90EE90;" text="2">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="46.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room115" font="$x3" layoutX="102.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="90.0" prefWidth="133.0" style="-fx-background-color: #90EE90;" text="15">
+                      <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="97.0">
+                          <image>
+                            <Image url="@kingD.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room114" font="$x3" layoutX="228.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="67.0" style="-fx-background-color: #90EE90;" text="14">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="35.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room108" font="$x3" layoutX="466.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="8">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="78.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room109" font="$x3" layoutX="468.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="9">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="76.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room110" font="$x3" layoutX="465.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="10">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="76.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room112" font="$x3" layoutX="344.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="121.0" style="-fx-background-color: #90EE90;" text="12">
+                      <graphic>
+                        <ImageView fitHeight="74.0" fitWidth="91.0">
+                          <image>
+                            <Image url="@kingD.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room113" font="$x3" layoutX="292.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="59.0" style="-fx-background-color: #90EE90;" text="13">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="30.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room103" font="$x3" layoutX="237.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="70.0" style="-fx-background-color: #90EE90;" text="3">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="41.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room104" font="$x3" layoutX="300.0" layoutY="-8.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="93.0" prefWidth="54.0" style="-fx-background-color: #90EE90;" text="4" textAlignment="JUSTIFY">
+                      <graphic>
+                        <ImageView fitHeight="85.0" fitWidth="36.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room105" font="$x3" layoutX="358.0" layoutY="-5.0" mnemonicParsing="false" onAction="#handleRoomAction" style="-fx-background-color: #90EE90;" text="5">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="41.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room106" font="$x3" layoutX="420.0" layoutY="-5.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="52.0" style="-fx-background-color: #90EE90;" text="6">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="34.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab id="floor2tab" fx:id="floor2tab" closable="false" text="Floor 2">
+              <content>
+                <AnchorPane fx:id="floor2plan" minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="684.0" style="-fx-background-color: #808080;">
+                  <children>
+                    <Button id="room219" font="$x3" layoutX="-7.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="19">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room220" font="$x3" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="98.0" style="-fx-background-color: #90EE90;" text="20">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="62.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room216" font="$x3" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="102.0" style="-fx-background-color: #90EE90;" text="16">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="69.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room211" font="$x3" layoutX="464.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="102.0" style="-fx-background-color: #90EE90;" text="11">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="69.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room207" font="$x3" layoutX="471.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleRoomAction" prefWidth="97.0" style="-fx-background-color: #90EE90;" text="7" textAlignment="RIGHT">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="73.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room201" font="$x3" layoutX="100.0" layoutY="-1.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="51.0" style="-fx-background-color: #90EE90;" text="1" textAlignment="JUSTIFY">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="46.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room218" font="$x3" layoutX="-11.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="18">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room217" font="$x3" layoutX="-10.0" layoutY="184.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="17">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room202" font="$x3" layoutX="164.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="51.0" style="-fx-background-color: #90EE90;" text="2">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="46.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room215" font="$x3" layoutX="102.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="90.0" prefWidth="133.0" style="-fx-background-color: #90EE90;" text="15">
+                      <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="97.0">
+                          <image>
+                            <Image url="@kingD.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room214" font="$x3" layoutX="228.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="67.0" style="-fx-background-color: #90EE90;" text="14">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="35.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room208" font="$x3" layoutX="466.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="8">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="78.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room209" font="$x3" layoutX="468.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="9">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="76.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room210" font="$x3" layoutX="465.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="10">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="76.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room212" font="$x3" layoutX="344.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="121.0" style="-fx-background-color: #90EE90;" text="12">
+                      <graphic>
+                        <ImageView fitHeight="74.0" fitWidth="91.0">
+                          <image>
+                            <Image url="@kingD.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room213" font="$x3" layoutX="292.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="59.0" style="-fx-background-color: #90EE90;" text="13">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="30.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room203" font="$x3" layoutX="237.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="70.0" style="-fx-background-color: #90EE90;" text="3">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="41.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room204" font="$x3" layoutX="300.0" layoutY="-8.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="93.0" prefWidth="54.0" style="-fx-background-color: #90EE90;" text="4" textAlignment="JUSTIFY">
+                      <graphic>
+                        <ImageView fitHeight="85.0" fitWidth="36.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room205" font="$x3" layoutX="358.0" layoutY="-5.0" mnemonicParsing="false" onAction="#handleRoomAction" style="-fx-background-color: #90EE90;" text="5">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="41.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room206" font="$x3" layoutX="420.0" layoutY="-5.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="52.0" style="-fx-background-color: #90EE90;" text="6">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="34.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab id="floor3tab" fx:id="floor3tab" closable="false" text="Floor 3">
+              <content>
+                <AnchorPane fx:id="floor3plan" minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="839.0" style="-fx-background-color: #808080;">
+                  <children>
+                    <Button id="room319" font="$x3" layoutX="-7.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="19">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room320" font="$x3" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="98.0" style="-fx-background-color: #90EE90;" text="20">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="62.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room316" font="$x3" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="102.0" style="-fx-background-color: #90EE90;" text="16">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="69.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room311" font="$x3" layoutX="464.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="102.0" style="-fx-background-color: #90EE90;" text="11">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="69.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room307" font="$x3" layoutX="471.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleRoomAction" prefWidth="97.0" style="-fx-background-color: #90EE90;" text="7" textAlignment="RIGHT">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="73.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room301" font="$x3" layoutX="100.0" layoutY="-1.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="51.0" style="-fx-background-color: #90EE90;" text="1" textAlignment="JUSTIFY">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="46.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room318" font="$x3" layoutX="-11.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="18">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room317" font="$x3" layoutX="-10.0" layoutY="184.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="17">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room302" font="$x3" layoutX="164.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="51.0" style="-fx-background-color: #90EE90;" text="2">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="46.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room315" font="$x3" layoutX="102.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="90.0" prefWidth="133.0" style="-fx-background-color: #90EE90;" text="15">
+                      <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="97.0">
+                          <image>
+                            <Image url="@kingD.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room314" font="$x3" layoutX="228.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="67.0" style="-fx-background-color: #90EE90;" text="14">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="35.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room308" font="$x3" layoutX="466.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="8">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="78.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room309" font="$x3" layoutX="468.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="9">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="76.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room310" font="$x3" layoutX="465.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="10">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="76.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room312" font="$x3" layoutX="344.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="121.0" style="-fx-background-color: #90EE90;" text="12">
+                      <graphic>
+                        <ImageView fitHeight="74.0" fitWidth="91.0">
+                          <image>
+                            <Image url="@kingD.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room313" font="$x3" layoutX="292.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="59.0" style="-fx-background-color: #90EE90;" text="13">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="30.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room303" font="$x3" layoutX="237.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="70.0" style="-fx-background-color: #90EE90;" text="3">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="41.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room304" font="$x3" layoutX="300.0" layoutY="-8.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="93.0" prefWidth="54.0" style="-fx-background-color: #90EE90;" text="4" textAlignment="JUSTIFY">
+                      <graphic>
+                        <ImageView fitHeight="85.0" fitWidth="36.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room305" font="$x3" layoutX="358.0" layoutY="-5.0" mnemonicParsing="false" onAction="#handleRoomAction" style="-fx-background-color: #90EE90;" text="5">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="41.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room306" font="$x3" layoutX="420.0" layoutY="-5.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="52.0" style="-fx-background-color: #90EE90;" text="6">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="34.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab id="floor4tab" fx:id="floor4tab" closable="false" text="Floor 4">
+              <content>
+                <AnchorPane fx:id="floor4plan" minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="775.0" style="-fx-background-color: #808080;">
+                  <children>
+                    <Button id="room419" font="$x3" layoutX="-7.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="19">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room420" font="$x3" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="98.0" style="-fx-background-color: #90EE90;" text="20">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="62.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room416" font="$x3" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="102.0" style="-fx-background-color: #90EE90;" text="16">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="69.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room411" font="$x3" layoutX="464.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="102.0" style="-fx-background-color: #90EE90;" text="11">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="69.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room407" font="$x3" layoutX="471.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleRoomAction" prefWidth="97.0" style="-fx-background-color: #90EE90;" text="7" textAlignment="RIGHT">
+                      <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="73.0">
+                          <image>
+                            <Image url="@suiteL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room401" font="$x3" layoutX="100.0" layoutY="-1.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="51.0" style="-fx-background-color: #90EE90;" text="1" textAlignment="JUSTIFY">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="46.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room418" font="$x3" layoutX="-11.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="18">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room417" font="$x3" layoutX="-10.0" layoutY="184.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #90EE90;" text="17">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="86.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room402" font="$x3" layoutX="164.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="51.0" style="-fx-background-color: #90EE90;" text="2">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="46.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room415" font="$x3" layoutX="102.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="90.0" prefWidth="133.0" style="-fx-background-color: #90EE90;" text="15">
+                      <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="97.0">
+                          <image>
+                            <Image url="@kingD.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room414" font="$x3" layoutX="228.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="67.0" style="-fx-background-color: #90EE90;" text="14">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="35.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room408" font="$x3" layoutX="466.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="8">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="78.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room409" font="$x3" layoutX="468.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="9">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="76.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room410" font="$x3" layoutX="465.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #90EE90;" text="10">
+                      <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="76.0">
+                          <image>
+                            <Image url="@singlebed.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room412" font="$x3" layoutX="344.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="83.0" prefWidth="121.0" style="-fx-background-color: #90EE90;" text="12">
+                      <graphic>
+                        <ImageView fitHeight="74.0" fitWidth="91.0">
+                          <image>
+                            <Image url="@kingD.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room413" font="$x3" layoutX="292.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="59.0" style="-fx-background-color: #90EE90;" text="13">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="30.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room403" font="$x3" layoutX="237.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="80.0" prefWidth="70.0" style="-fx-background-color: #90EE90;" text="3">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="41.0">
+                          <image>
+                            <Image url="@doubleR.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room404" font="$x3" layoutX="300.0" layoutY="-8.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="93.0" prefWidth="54.0" style="-fx-background-color: #90EE90;" text="4" textAlignment="JUSTIFY">
+                      <graphic>
+                        <ImageView fitHeight="85.0" fitWidth="36.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room405" font="$x3" layoutX="358.0" layoutY="-5.0" mnemonicParsing="false" onAction="#handleRoomAction" style="-fx-background-color: #90EE90;" text="5">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="41.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                    <Button id="room406" font="$x3" layoutX="420.0" layoutY="-5.0" mnemonicParsing="false" onAction="#handleRoomAction" prefHeight="89.0" prefWidth="52.0" style="-fx-background-color: #90EE90;" text="6">
+                      <graphic>
+                        <ImageView fitHeight="81.0" fitWidth="34.0">
+                          <image>
+                            <Image url="@singlebedL.png" />
+                          </image>
+                        </ImageView>
+                      </graphic>
+                    </Button>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+        <ImageView fitHeight="63.0" fitWidth="120.0" layoutX="16.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@singlebed.png" />
+          </image>
+        </ImageView>
+        <Label fx:id="singleL" alignment="CENTER" layoutX="16.0" layoutY="189.0" prefHeight="39.0" prefWidth="121.0" text="Single" textFill="WHITE" />
+        <ImageView fitHeight="69.0" fitWidth="121.0" layoutX="15.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@double.png" />
+          </image>
+        </ImageView>
+        <Label fx:id="doubleL" alignment="CENTER" layoutX="16.0" layoutY="281.0" prefHeight="39.0" prefWidth="121.0" text="Double" textFill="WHITE" />
+        <ImageView fitHeight="69.0" fitWidth="110.0" layoutX="22.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@kingD.png" />
+          </image>
+        </ImageView>
+        <Label fx:id="kingL" alignment="CENTER" layoutX="15.0" layoutY="389.0" prefHeight="39.0" prefWidth="121.0" text="King" textFill="WHITE" />
+        <ImageView fitHeight="69.0" fitWidth="110.0" layoutX="34.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@suiteL.png" />
+          </image>
+        </ImageView>
+        <Label fx:id="suiteL" alignment="CENTER" layoutX="11.0" layoutY="498.0" prefHeight="39.0" prefWidth="121.0" text="Suite" textFill="WHITE" />
+        <Button layoutX="898.0" layoutY="134.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="102.0" style="-fx-background-color: #90EE90;">
+          <graphic>
+            <ImageView fitHeight="57.0" fitWidth="101.0">
+              <image>
+                <Image url="@singlebed.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Label alignment="CENTER" layoutX="896.0" layoutY="208.0" prefHeight="39.0" prefWidth="121.0" text="Available" textFill="WHITE" />
+        <Button layoutX="897.0" layoutY="249.0" mnemonicParsing="false" opacity="0.4" prefHeight="65.0" prefWidth="102.0" style="-fx-background-color: #FF0000;">
+          <graphic>
+            <ImageView fitHeight="57.0" fitWidth="101.0">
+              <image>
+                <Image url="@singlebed.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Label alignment="CENTER" layoutX="896.0" layoutY="320.0" prefHeight="39.0" prefWidth="121.0" text="Unavailable" textFill="WHITE" />
+        <Button layoutX="898.0" layoutY="357.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="102.0" style="-fx-background-color: #FFFAF0;">
+          <graphic>
+            <ImageView fitHeight="57.0" fitWidth="101.0">
+              <image>
+                <Image url="@singlebed.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Label alignment="CENTER" layoutX="897.0" layoutY="434.0" prefHeight="39.0" prefWidth="121.0" text="Selected" textFill="WHITE" />
+        <Label fx:id="roomSelectedLabel" alignment="CENTER" font="$x4" layoutX="289.0" layoutY="34.0" prefHeight="35.0" prefWidth="482.0" text="Select a room" textFill="WHITE" />
+      </children>
+    </AnchorPane>
+  </children>
+</StackPane>

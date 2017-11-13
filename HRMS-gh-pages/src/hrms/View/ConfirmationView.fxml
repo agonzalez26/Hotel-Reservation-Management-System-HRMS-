@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<!--Layout for ConfirmationView-->
+
+<StackPane style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.ConfirmationViewController">
+    <children>
+        <AnchorPane id="confirmationView" fx:id="confirmationView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" StackPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button id="logInButton" fx:id="logInButton" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="       Login        " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="backButton" fx:id="backButton" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Back      " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="confirmButton" fx:id="confirmButton" layoutX="897.0" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="    Confirm    " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0" />
+                <Button id="cancelButton" fx:id="cancelButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Cancel      " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Confirm your Stay" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="352.0" layoutX="175.0" layoutY="166.0" stroke="WHITE" strokeType="INSIDE" width="338.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="241.0" layoutX="530.0" layoutY="166.0" stroke="WHITE" strokeType="INSIDE" width="325.0" />
+                <Label alignment="CENTER" layoutX="223.0" layoutY="173.0" prefHeight="35.0" prefWidth="182.0" style="-fx-background-color: #152d54;" text="Reservation Info" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="602.0" layoutY="173.0" prefHeight="35.0" prefWidth="182.0" style="-fx-background-color: #152d54;" text="Contact Info" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <GridPane layoutX="196.0" layoutY="207.0" prefHeight="275.0" prefWidth="302.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.66668701171875" minWidth="10.0" prefWidth="120.77783203125" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.111083984375" minWidth="10.0" prefWidth="159.22216796875" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.666656494140625" minHeight="4.666656494140625" prefHeight="27.33331298828125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.333343505859375" minHeight="0.0" prefHeight="32.66668701171875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="37.0" minHeight="6.0" prefHeight="27.333343505859375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.333343505859375" minHeight="7.666656494140625" prefHeight="28.33331298828125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.333343505859375" minHeight="8.0" prefHeight="32.333343505859375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.333343505859375" minHeight="8.666656494140625" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="56.33331298828125" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Reservation Number:" textFill="WHITE" />
+                  <Label text="Check In:" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label text="Check Out:" textFill="WHITE" GridPane.rowIndex="2" />
+                  <Label text="Day Count:" textFill="WHITE" GridPane.rowIndex="3" />
+                  <Label text="Guest Count:" textFill="WHITE" GridPane.rowIndex="4" />
+                  <Label text="Rooms:" textFill="WHITE" GridPane.rowIndex="5" />
+                  <Label text="Price:" textFill="WHITE" GridPane.rowIndex="7" />
+                  <Label text="Taxes (6%):" textFill="WHITE" GridPane.rowIndex="8" />
+                  <Label text="Total Price:" textFill="WHITE" GridPane.rowIndex="9" />
+                  <TextField fx:id="reservationNumber" editable="false" promptText="Reservation Number" GridPane.columnIndex="1" />
+                  <TextField fx:id="checkIn" editable="false" promptText="Check In Date" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="checkOut" editable="false" promptText="Check Out Date" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="dayCount" editable="false" promptText="Day Count" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="guestCount" editable="false" promptText="Guest Count" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="roomList" editable="false" prefHeight="25.0" prefWidth="188.0" promptText="Room List" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="price" editable="false" promptText="Price" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="totPrice" editable="false" promptText="Total Price" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label text="Amenity Count:" textFill="WHITE" GridPane.rowIndex="6" />
+                  <TextField fx:id="amenityCount" editable="false" promptText="Amenity Count" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="569.0" layoutY="226.0" prefHeight="159.0" prefWidth="280.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.66668701171875" minWidth="10.0" prefWidth="120.77783203125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.111083984375" minWidth="10.0" prefWidth="159.22216796875" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.888870239257812" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="First Name:" textFill="WHITE" />
+                  <Label text="Last Name:" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label text="Phone Number:" textFill="WHITE" GridPane.rowIndex="2" />
+                  <Label text="Email:" textFill="WHITE" GridPane.rowIndex="3" />
+                  <Label text="Address:" textFill="WHITE" GridPane.rowIndex="4" />
+                  <TextField fx:id="firstname" editable="false" promptText="First Name" GridPane.columnIndex="1" />
+                  <TextField fx:id="lastname" editable="false" promptText="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="phonenumber" editable="false" promptText="Phone Number" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="emailaddress" editable="false" promptText="Email Adress" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="address" editable="false" promptText="Address" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

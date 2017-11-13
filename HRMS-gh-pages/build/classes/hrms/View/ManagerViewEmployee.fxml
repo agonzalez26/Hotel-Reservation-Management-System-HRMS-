@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--<StackPane style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.ManagerViewEmployeeController">
+   <children>
+      <AnchorPane id="employeeView" fx:id="employeeView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" StackPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0" />
+            <Button id="logOutButton" fx:id="logOutButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Logout      " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Employee" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <SplitPane dividerPositions="0.29797979797979796" layoutX="188.0" layoutY="174.0" prefHeight="339.0" prefWidth="666.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="roomButton" layoutX="-5.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Hotel Rooms" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="reservationsButton" layoutX="-5.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Reservations" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="managerButton" layoutX="-5.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #7689a9;" text="Manager" textFill="WHITE" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="158.0">
+                     <children>
+                        <ListView layoutX="1.0" prefHeight="337.0" prefWidth="463.0" />
+                        <Button fx:id="roomPriceButton" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Rooms Price" textFill="WHITE" />
+                        <Button fx:id="employeeButton" layoutX="194.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #7689a9;" text="Employees" textFill="WHITE" />
+                        <Button fx:id="amenityButton" layoutX="354.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Amenities" textFill="WHITE" />
+                        <Button fx:id="createButton" layoutX="104.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Create Employee" />
+                        <TextField fx:id="employeeId" layoutX="185.0" layoutY="193.0" prefHeight="25.0" prefWidth="206.0" />
+                        <TextField fx:id="employeePassword" layoutX="185.0" layoutY="220.0" prefHeight="25.0" prefWidth="206.0" />
+                        <Text layoutX="71.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID" />
+                        <Text layoutX="87.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+                        <TableView layoutX="30.0" layoutY="45.0" prefHeight="139.0" prefWidth="398.0">
+                          <columns>
+                            <TableColumn prefWidth="186.0" text="Employee ID" />
+                            <TableColumn minWidth="0.0" prefWidth="211.0" text="Password" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="removeButton" layoutX="267.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Remove Employee" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>-->
+
+<AnchorPane id="employeeView" fx:id="employeeView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.ManagerViewEmployeeController">
+   <children>
+      <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0" />
+      <Button id="logOutButton" fx:id="logOutButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Logout      " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Employee" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="188.0" layoutY="174.0" prefHeight="339.0" prefWidth="666.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="roomButton" layoutX="-5.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Hotel Rooms" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="reservationsButton" layoutX="-5.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #152d54;" text="Reservations" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="managerButton" layoutX="-5.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #7689a9;" text="Manager" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="158.0">
+               <children>
+                  <ListView prefHeight="339.0" prefWidth="463.0" />
+                  <Button fx:id="roomPriceButton" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Rooms Price" textFill="WHITE" />
+                  <Button fx:id="employeeButton" layoutX="194.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #7689a9;" text="Employees" textFill="WHITE" />
+                  <Button fx:id="amenityButton" layoutX="354.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Amenities" textFill="WHITE" />
+                  <Button fx:id="createButton" layoutX="161.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Create Employee" />
+                  <TextField fx:id="lastName" layoutX="91.0" layoutY="246.0" prefHeight="25.0" prefWidth="325.0" />
+                  <TextField fx:id="firstName" layoutX="91.0" layoutY="216.0" prefHeight="25.0" prefWidth="325.0" />
+                  <Text layoutX="26.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" />
+                  <Text layoutX="30.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+                  <TableView fx:id="employeeTable" layoutX="30.0" layoutY="45.0" prefHeight="132.0" prefWidth="398.0">
+                    <columns>
+                      <TableColumn fx:id="employeeIDColumn" prefWidth="101.0" text="Employee ID" />
+                      <TableColumn fx:id="firstNameColumn" minWidth="0.0" prefWidth="96.0" text="First" />
+                        <TableColumn fx:id="lastNameColumn" minWidth="0.0" prefWidth="96.0" text="Last" />
+                        <TableColumn fx:id="passwordColumn" minWidth="0.0" prefWidth="96.0" text="Password" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="removeButton" layoutX="172.0" layoutY="184.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Remove Employee" />
+                  <Text layoutX="30.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+                  <TextField fx:id="newPassword" layoutX="91.0" layoutY="277.0" prefHeight="25.0" prefWidth="325.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="349.0" layoutY="548.0" prefHeight="39.0" prefWidth="110.0" text="Total Income:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="484.0" layoutY="550.0" prefHeight="35.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

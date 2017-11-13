@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<!--Layout for HomeView-->
+
+<StackPane style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+           fx:controller="hrms.Controller.HomeViewController">
+    <children>
+        <AnchorPane id="homeView" fx:id="homeView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+                    minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" 
+                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" 
+                    StackPane.alignment="CENTER">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="350.0" layoutX="249.0" layoutY="101.0" stroke="WHITE" 
+                           strokeType="INSIDE" width="513.0" />
+                <Button id="logInButton" fx:id="logInButton" layoutY="27.0" mnemonicParsing="false" onAction="#handleButtonAction" 
+                        style="-fx-background-color: #152d54;" text="       Login        " textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Label prefHeight="20.0" prefWidth="396.0" text="Hotel Reservation Management System" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button id="checkInButton" fx:id="checkInButton" layoutX="328.0" layoutY="230.0" mnemonicParsing="false" 
+                        onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="       Check In        " 
+                        textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="checkOutButton" fx:id="checkOutButton" layoutX="516.0" layoutY="230.0" mnemonicParsing="false" 
+                        onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Check Out      " 
+                        textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <TextField id="reservationNumber" fx:id="reservationNumber" layoutX="516.0" layoutY="173.0" prefHeight="35.0" 
+                           prefWidth="199.0" />
+                <Label layoutX="321.0" layoutY="177.0" text="Reservation Number:" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button id="bookReservationButton" fx:id="bookReservationButton" layoutX="432.0" layoutY="300.0" mnemonicParsing="false" 
+                        onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="Book Reservation" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<!--Layout for ContactInfoView-->
+
+
+<StackPane style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrms.Controller.ContactInfoViewController">
+    <children>
+        <AnchorPane id="contactInfoView" fx:id="contactInfoView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" StackPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button id="logInButton" fx:id="logInButton" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="       Login        " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="backButton" fx:id="backButton" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Back      " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="nextButton" fx:id="nextButton" layoutX="904.0" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Next      " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" strokeType="INSIDE" width="726.0" />
+                <Button id="cancelButton" fx:id="cancelButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Cancel      " textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <TextField id="billAmountText" fx:id="billAmountText" editable="false" layoutX="513.0" layoutY="568.0" prefHeight="25.0" prefWidth="163.0" />
+                <Label layoutX="390.0" layoutY="565.0" prefHeight="29.0" prefWidth="110.0" text="Bill Amount:" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <GridPane layoutX="202.0" layoutY="158.0" prefHeight="297.0" prefWidth="513.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="88.88888549804688" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="88.88888549804688" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="88.88888549804688" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="88.88888549804688" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="147.44444274902344" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="170.22225952148438" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="170.22225952148438" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="35.0" prefWidth="240.0" text="First Name:" textAlignment="RIGHT" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="35.0" prefWidth="240.0" text="Last Name:" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="32.0" prefWidth="240.0" text="Address:" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="4">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="35.0" prefWidth="240.0" text="Phone Number:" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField id="guestFirstName" fx:id="guestFirstName" promptText="First Name" GridPane.columnIndex="1">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField id="guestLastName" fx:id="guestLastName" promptText="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField id="guestPhoneNumber" fx:id="guestPhoneNumber" promptText="Phone Number (1234567890)" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="35.0" prefWidth="240.0" text="Email Address:" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField id="guestEmailAddress" fx:id="guestEmailAddress" prefHeight="30.0" prefWidth="241.0" promptText="Email Address (apples@yahoo.com)" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField id="guestAddressPart1" fx:id="guestAddress1" promptText="Address (123 Main Street)" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField id="guestAddressPart2" fx:id="guestAddress2" promptText="Address (Roswell GA 30007)" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </GridPane>
+                <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" style="-fx-background-color: #152d54;" text="Update Contact Information" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
+<!-- <StackPane style="-fx-background-color: #7689a9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+           fx:controller="hrms.Controller.ContactInfoViewController">
+   <children>
+      <AnchorPane id="contactInfoView" fx:id="contactInfoView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+                  minWidth="-Infinity" prefHeight="600.0" prefWidth="1025.0" style="-fx-background-color: #7689a9;" 
+                  StackPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="29.0" prefWidth="1025.0" text="Hotel Reservation Management System" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button id="logInButton" fx:id="logInButton" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" 
+                    style="-fx-background-color: #152d54;" text="       Login        " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="backButton" fx:id="backButton" layoutY="561.0" mnemonicParsing="false" onAction="#handleButtonAction" 
+                    style="-fx-background-color: #152d54;" text="      Back      " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="nextButton" fx:id="nextButton" layoutX="904.0" layoutY="561.0" mnemonicParsing="false" 
+                    onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Next      " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f7a94" height="444.0" layoutX="154.0" layoutY="91.0" stroke="WHITE" 
+                       strokeType="INSIDE" width="726.0" />
+            <Button id="cancelButton" fx:id="cancelButton" layoutX="889.0" layoutY="35.0" mnemonicParsing="false" 
+                    onAction="#handleButtonAction" style="-fx-background-color: #152d54;" text="      Cancel      " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField id="billAmountText" fx:id="billAmountText" editable="false" layoutX="513.0" layoutY="568.0" 
+                       prefHeight="25.0" prefWidth="163.0" />
+            <Label layoutX="390.0" layoutY="565.0" prefHeight="29.0" prefWidth="110.0" text="Bill Amount:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="202.0" layoutY="158.0" prefHeight="297.0" prefWidth="513.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="88.88888549804688" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="88.88888549804688" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="88.88888549804688" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="88.88888549804688" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="147.44444274902344" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="170.22225952148438" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="170.22225952148438" minHeight="15.0" prefHeight="45.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="35.0" prefWidth="240.0" text="First Name:" 
+                         textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="35.0" prefWidth="240.0" text="Last Name:" 
+                         textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="32.0" prefWidth="240.0" text="Address:" 
+                         textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="35.0" prefWidth="240.0" text="Phone Number:" 
+                         textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="guestFirstName" fx:id="guestFirstName" promptText="First Name" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="guestLastName" fx:id="guestLastName" promptText="Last Name" GridPane.columnIndex="1" 
+                             GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="guestPhoneNumber" fx:id="guestPhoneNumber" promptText="Phone Number" GridPane.columnIndex="1" 
+                             GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="35.0" prefWidth="240.0" 
+                         text="Email Address:" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="guestEmailAddress" fx:id="guestEmailAddress" prefHeight="30.0" prefWidth="241.0" 
+                             promptText="Email Address" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="guestAddress" fx:id="guestAddress" promptText="Address" GridPane.columnIndex="1" 
+                             GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="guestCCNumber" fx:id="guestCCNumber" promptText="Credit Card Number" GridPane.columnIndex="1" 
+                             GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" prefHeight="32.0" prefWidth="240.0" 
+                         text="Credit Card Number:" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" layoutX="288.0" layoutY="114.0" prefHeight="35.0" prefWidth="482.0" 
+                   style="-fx-background-color: #152d54;" text="Update Contact Information" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>-->
